@@ -3,7 +3,7 @@ import MainHeader from './main/main-header'
 import BottomHeader from './bottom/carousel-boxes'
 export default () => (
     <>
-        <div className="py-4 px-1 bg-custom-black">
+        <div className="bg-custom-black overflow-hidden">
         <HeaderTop/>
         <MainHeader/>
         <BottomHeader/>

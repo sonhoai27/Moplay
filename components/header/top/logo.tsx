@@ -1,5 +1,9 @@
-export default () => (
+interface Logo {
+  uri: string;
+  name?: string;
+}
+export default ({uri, name}: Logo) => (
     <div className="w-1/5">
-      <img src="https://go.moplay.com/img/20526/icon.png" className="w-screen"/>
+      <img src={uri} className="w-screen"/>
     </div>
   )

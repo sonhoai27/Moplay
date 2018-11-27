@@ -1,6 +1,6 @@
 export default () => (
     <div className="flex w-3/5">
-        <button 
+        <button
             className="
                 flex-1
                 bg-purple 
