@@ -1,0 +1,74 @@
+export interface carousel {
+    key: number;
+    icon: string;
+    name: string;
+    number: number;
+    link: string;
+}
+const carousels = [
+    {
+        key: 1,
+        icon: 'https://go.moplay.com/imgs/i-v2/o/qnav/favorite.svg',
+        name: 'All Sports',
+        number: 69,
+        link: ''
+    },
+    {
+        key: 2,
+        icon: 'https://go.moplay.com/imgs/i-v2/o/sport/football.svg',
+        name: 'Soccer',
+        number: 17,
+        link: ''
+    },
+    {
+        key: 3,
+        icon: 'https://go.moplay.com/imgs/i-v2/o/sport/basketball.svg',
+        name: 'Basketball',
+        number: 3,
+        link: ''
+    },
+    {
+        key: 4,
+        icon: 'https://go.moplay.com/imgs/i-v2/o/sport/tennis.svg',
+        name: 'Tennis',
+        number: 32,
+        link: ''
+    },
+    {
+        key: 5,
+        icon: 'https://go.moplay.com/imgs/i-v2/o/sport/ice-hockey.svg',
+        name: 'Ice Hockey',
+        number: 12,
+        link: ''
+    },
+    {
+        key: 5,
+        icon: 'https://go.moplay.com/imgs/i-v2/o/sport/handball.svg',
+        name: 'Handball',
+        number: 3,
+        link: ''
+    },
+    {
+        key: 7,
+        icon: 'https://go.moplay.com/imgs/i-v2/o/sport/futsal.svg',
+        name: 'Futsal',
+        number: 6,
+        link: ''
+    }
+]
+const renderListCarousel = (carousels) => {
+    return carousels.map((element: carousel) => {
+        return (
+            <li className="w-1/5 flex-none p-4 text-center" key={element.key}>
+                <img src={element.icon}/>
+                <p className="text-white text-xs mt-4">{element.name}</p>
+                <p className="text-white text-xs mt-2">{element.number}</p>
+            </li>
+        )
+    })
+}
+export default () => (
+    <ul className="inline-flex list-reset pt-8 pb-2">
+        {renderListCarousel(carousels)}
+    </ul>
+  )
