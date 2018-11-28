@@ -1,9 +1,11 @@
 {
-    "presets": [
-      "next/babel",
-      "@zeit/next-typescript/babel"
-    ],
-    "plugins": [
-        ["styled-jsx/babel", { "optimizeForSpeed": true }]
-      ]
-  }
+  "presets": ["next/babel", "@zeit/next-typescript/babel"],
+  "plugins": [
+    [
+      "styled-jsx/babel",
+      {
+        "optimizeForSpeed": true
+      }
+    ]
+  ]
+}

@@ -5,10 +5,7 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "jsx": "preserve",
-    "lib": [
-      "dom",
-      "es2017"
-    ],
+    "lib": ["dom", "es2017"],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -27,9 +24,7 @@
     "noUnusedLocals": true,
     "downlevelIteration": true
   },
-  "include": [
-    "/*"
-  ],
+  "include": ["/*"],
   "exclude": [
     "public",
     "node_modules/**/*",
