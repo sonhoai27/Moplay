@@ -1,36 +1,42 @@
 {
-    "compileOnSave": false,
-    "compilerOptions": {
-      "allowJs": true,
-      "allowSyntheticDefaultImports": true,
-      "baseUrl": ".",
-      "jsx": "preserve",
-      "lib": ["dom", "es2017"],
-      "module": "esnext",
-      "moduleResolution": "node",
-      "noEmit": true,
-      "noUnusedParameters": true,
-      "preserveConstEnums": true,
-      "removeComments": false,
-      "skipLibCheck": true,
-      "strict": true,
-      "sourceMap": true,
-      "forceConsistentCasingInFileNames": true,
-      "noImplicitReturns": true,
-      "noImplicitThis": true,
-      "strictNullChecks": true,
-      "noImplicitAny": false,
-      "suppressImplicitAnyIndexErrors": true,
-      "noUnusedLocals": true,
-      "downlevelIteration": true
-    },
-    "exclude": [
-      "public",
-      "node_modules",
-      "build",
-      "scripts",
-      "acceptance-tests",
-      "webpacks",
-      "src/setupTests.ts"
-    ]
-  }
+  "compileOnSave": false,
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "downlevelIteration": true
+  },
+  "include": [
+    "/*"
+  ],
+  "exclude": [
+    "public",
+    "node_modules/**/*",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpacks",
+    "src/setupTests.ts"
+  ]
+}

@@ -4,6 +4,6 @@ interface Logo {
 }
 export default ({uri, name}: Logo) => (
     <div className="w-1/5">
-      <img src={uri} className="w-screen"/>
+      <img src={uri} className="w-full"/>
     </div>
   )

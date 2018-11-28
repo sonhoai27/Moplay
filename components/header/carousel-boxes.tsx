@@ -83,21 +83,21 @@ const renderListCarousel = (carousels) => {
             <li className="
                 flex-none
                 w-24
-                py-2
+                py-5
                 m-auto
                 border-grey-darkest
                 border-r
                 text-center"
             key={element.key}>
                 <img src={element.icon} className="m-auto w-6 h-6"/>
-                <p className="text-white text-xs mt-2 font-thin">{element.name}</p>
+                <p className="text-white text-xs mt-1 font-thin">{element.name}</p>
                 <p className="hidden sm:block text-white text-xs mt-1 font-thin">{element.number}</p>
             </li>
         )
     })
 }
 export default () => (
-    <ul className="inline-flex w-screen list-reset mt-4 overflow-scroll" style={{background: '#191919'}}>
-        {renderListCarousel(carousels)}
+    <ul className="inline-flex w-full list-reset mt-4 overflow-scroll sm:overflow-hidden" style={{background: '#191919'}}>
+            {renderListCarousel(carousels)}
     </ul>
   )
