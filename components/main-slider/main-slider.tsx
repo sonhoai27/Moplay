@@ -82,14 +82,13 @@ export default () => {
   const renderListSlider = (list: ArrayList<ISliderItem>) => {
     if (checkLen(list) > 0) {
       return list.map((element, index) => {
-        console.log(element);
         return <Fragment key={index}>{SliderItem(element)}</Fragment>;
       });
     }
     return "<li>NULL</li>";
   };
   return (
-    <div className="overflow-hidden py-2">
+    <div className="overflow-hidden py-2 z-10">
       <ul
         className="
           inline-flex 

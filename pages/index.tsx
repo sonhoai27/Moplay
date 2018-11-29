@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "../components/header/header";
 import MainSlider from "../components/main-slider/main-slider";
+import { BetSlip } from "../components/bet-slip/bet-slip";
 export default () => (
   <>
     <Head>
@@ -13,6 +14,7 @@ export default () => (
       />
     </Head>
     <Header />
+    <BetSlip/>
     <MainSlider />
   </>
 );

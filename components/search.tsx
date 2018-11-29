@@ -10,17 +10,17 @@ export default () => (
       />
       <input
         className="
-                            flex-1 
-                            w-full 
-                            pin 
-                            input--seach 
-                            absolute 
-                            text-left 
-                            text-sm
-                            text-white
-                            pl-10
-                            bg-transparent
-                            outline-none
+                flex-1 
+                w-full 
+                pin 
+                input--seach 
+                absolute 
+                text-left 
+                text-sm
+                text-white
+                pl-10
+                bg-transparent
+                outline-none
                      "
         placeholder="What are you looking for?"
       />
